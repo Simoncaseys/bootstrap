@@ -1,0 +1,6 @@
+ Public Sub ShowMessage()
+        lblModalTitle.Text = "Database has been Anonymized"
+        lblModalBody.Text = "The Database " + DatabaseList.SelectedItem.Text + " on server " + serverName.SelectedValue + " Anonymization has been successful "
+        ScriptManager.RegisterStartupScript(Page, Page.GetType(), "myModal", "$('#myModal').modal();", True)
+        upModal.Update()
+    End Sub
